@@ -1,7 +1,11 @@
 ### In active development
 Quake-like FPS using raylib
 
-Build (propably need to install some dependencies for raylib):
+Submodules:
+
+```git submodule update --init --recursive```
+
+Build:
 
 ```sh setupCMake.sh``` 
 
