@@ -29,9 +29,11 @@ public:
     Vector3 up =        {0.0f, 1.0f, 0.0f};
     Vector3 velocity =  {0.0f, 0.0f, 0.0f};
     float speed = 10.0f; // not going to be used
-    float acceleration = 0.08f;
+    float acceleration = 40.f;
     void Accelerate(Vector3 direction);
     void Move();
+    Vector3 GetNextPosition();
+
 private:
 
 };
