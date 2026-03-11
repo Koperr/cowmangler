@@ -1,9 +1,11 @@
-#include "CollisionComponent.h"
+#include "CollisionSystem.h"
 
 BoundingBox GetBoundingBox(Model model, Vector3 pos){
     BoundingBox bb = GetModelBoundingBox(model);
-    bb.min += pos / 2;
-    bb.max += pos / 2;
+    // bb.min += pos / 2;
+    // bb.max += pos / 2;
+    bb.min = Vector3Add(bb.min, pos);
+    bb.max = Vector3Add(bb.max, pos);
     return bb;
 }
 

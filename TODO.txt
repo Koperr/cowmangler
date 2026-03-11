@@ -1,7 +1,7 @@
 Make:
 -Game.cpp/h
 -Physics.cpp/h
--Renderer.cpp/h
--Level.cpp/h
 
 then tidy main.cpp and put all the stuff into the new files
+
+fix collision

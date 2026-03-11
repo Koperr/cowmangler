@@ -15,21 +15,3 @@ void Player::UpdateCamera()
     camera.target = camera.position + direction;
 }
 
-void Player::Accelerate(Vector3 direction)
-{
-    float dt = GetFrameTime();
-    velocity += direction * acceleration * dt;
-}
-
-void Player::Move()
-{
-    float dt = GetFrameTime();
-    this->position += velocity * dt;
-}
-
-Vector3 Player::GetNextPosition()
-{
-    float dt = GetFrameTime();
-    Vector3 next_pos = position + (velocity * dt);
-    return next_pos;
-}
